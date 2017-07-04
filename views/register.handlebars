@@ -1,79 +1,80 @@
-<form action="/register" method="post">
-    <div class="field">
-    <label class="label">Name</label>
-    <p class="control has-icons-left has-icons-right">
-        <input class="input is-success" name="name" type="text" placeholder="Enter your Name">
-        <span class="icon is-small is-left">
-        <i class="fa fa-user"></i>
-        </span>
-        <span class="icon is-small is-right">
-        <i class="fa fa-check"></i>
-        </span>
-    </p>
-    <p class="help is-success">This username is available</p>
-    </div>
+<h1 class="title is-1">Register</h1>
 
-    
-    <div class="field">
-        <label class="label">Username</label>
-        <p class="control has-icons-left has-icons-right">
-            <input class="input is-success" name="username" type="text" placeholder="Enter Username">
-            <span class="icon is-small is-left">
-            <i class="fa fa-user-circle-o"></i>
-            </span>
-            <span class="icon is-small is-right">
-            <i class="fa fa-check"></i>
-            </span>
-        </p>
-        <p class="help is-success">This username is available</p>
-    </div>
+<div class="columns">
+    <div class="column is-two-thirds">
+        <form action="/register" method="post">
+            <div class="field">
+            <label class="label">Name</label>
+            <p class="control has-icons-left has-icons-right">
+                <input class="input is-success" name="name" type="text" placeholder="Enter your Name">
+                <span class="icon is-small is-left">
+                <i class="fa fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                <i class="fa fa-check"></i>
+                </span>
+            </p>
+            </div>
 
-    <div class="field">
-        <label class="label">Email</label>
-        <p class="control has-icons-left has-icons-right">
-            <input class="input is-danger" name="email" type="text" placeholder="Enter your Email">
-            <span class="icon is-small is-left">
-            <i class="fa fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-            <i class="fa fa-warning"></i>
-            </span>
-        </p>
-        <p class="help is-danger">This email is invalid</p>
-    </div>
-    
-    <div class="field">
-        <label class="label">Password</label>
-        <p class="control has-icons-left has-icons-right">
-            <input class="input is-success" name="password" type="password" placeholder="Enter your Passport">
-            <span class="icon is-small is-left">
-            <i class="fa fa-unlock-alt"></i>
-            </span>
-            <span class="icon is-small is-right">
-            <i class="fa fa-check"></i>
-            </span>
-        </p>
-        <p class="help is-success">This username is available</p>
-    </div>
+            
+            <div class="field">
+                <label class="label">Username</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-success" name="username" type="text" placeholder="Enter Username">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-user-circle-o"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                    </span>
+                </p>
+            </div>
 
-    <div class="field">
-        <label class="label">Confirm Password</label>
-        <p class="control has-icons-left has-icons-right">
-            <input class="input is-success" name="password2" type="password" placeholder="Confirm Passport" value="bulma">
-            <span class="icon is-small is-left">
-            <i class="fa fa-unlock-alt"></i>
-            </span>
-            <span class="icon is-small is-right">
-            <i class="fa fa-check"></i>
-            </span>
-        </p>
-        <p class="help is-success">This username is available</p>
-    </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" name="email" type="text" placeholder="Enter your Email">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-warning"></i>
+                    </span>
+                </p>
+            </div>
+            
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-success" name="password" type="password" placeholder="Enter your Passport">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-unlock-alt"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                    </span>
+                </p>
+            </div>
 
-    <div class="field is-grouped">
-        <p class="control">
-            <button class="button is-primary">Submit</button>
-        </p>
+            <div class="field">
+                <label class="label">Confirm Password</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-success" name="password2" type="password" placeholder="Confirm Passport">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-unlock-alt"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field is-grouped">
+                <p class="control">
+                    <button class="button is-primary">Submit</button>
+                </p>
+            </div>
+            Have An Account? <a href="/login">Login Now</a>
+        </form>
     </div>
-    Have An Account? <a href="/login">Login Now</a>
-</form>
+</div>

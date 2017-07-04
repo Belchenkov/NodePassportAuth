@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{!-- CSS --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css" />
+
     <title>Passport App</title>
 </head>
 <body>
-    
+    <div class="container">
+
+     {{#if success_msg}}
+        <div class="notification is-success">
+          {{success_msg}}
+        </div>
+     {{/if}} 
+
+     {{#if error_msg}}
+        <div class="notification is-danger">
+          {{error_msg}}
+        </div>
+     {{/if}} 
+
     {{#if errors}}
       {{#each errors}}
-        <div class="alert alert-danger">{{msg}}</div>
+        <div class="notification is-danger">
+          {{msg}}
+        </div>
       {{/each}}
     {{/if}}
     
     {{{body}}}
-
+    </div>
 </body>
 </html>
