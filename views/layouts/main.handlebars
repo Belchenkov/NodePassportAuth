@@ -26,6 +26,12 @@
         </div>
      {{/if}} 
 
+     {{#if error}}
+        <div class="notification is-danger">
+          {{error}}
+        </div>
+    {{/if}}
+
     {{#if errors}}
       {{#each errors}}
         <div class="notification is-danger">
