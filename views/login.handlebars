@@ -1,1 +1,41 @@
-Login
+<h1 class="title is-1">Login</h1>
+
+<div class="columns">
+    <div class="column is-two-thirds">
+        <form action="/login" method="post">
+            <div class="field">
+                <label class="label">Username</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-success" name="username" type="text" placeholder="Enter Username">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-user-circle-o"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input is-success" name="password" type="password" placeholder="Enter your Passport">
+                    <span class="icon is-small is-left">
+                    <i class="fa fa-unlock-alt"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                    </span>
+                </p>
+            </div>
+            <br>
+            <div class="field is-grouped">
+                <p class="control">
+                    <button class="button is-primary">Login</button>
+                </p>
+            </div>
+            
+            Don't Have An Account? <a href="/register">Register Now</a>
+        </form>
+    </div>
+</div>
