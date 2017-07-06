@@ -12,6 +12,44 @@
     <title>Passport App</title>
 </head>
 <body>
+    
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            PassportApp
+          </a>
+
+          <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div id="navMenuTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/">
+                Dashboard
+              </a>
+              <a class="navbar-item" href="/login">
+                Login
+              </a>
+              <a class="navbar-item" href="/register">
+                Register
+              </a>
+
+              {{#if user}}
+              <a class="navbar-item" href="/logout">
+                Logout
+              </a>
+              {{/if}}
+            </div>
+          </div>   
+        </div>
+      </nav>
+    </header>
+
     <div class="container">
 
      {{#if success_msg}}
